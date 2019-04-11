@@ -1,0 +1,10 @@
+services:
+
+  command.example:
+    class: App\Entrypoint\Command\ExampleCommand
+
+  console:
+    class: Symfony\Component\Console\Application
+    calls:
+      - [add, ['@command.example']]
+    public: true

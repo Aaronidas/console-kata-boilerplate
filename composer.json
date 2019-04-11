@@ -1,0 +1,33 @@
+{
+  "name": "aaronidas/console-kata-boilerplate",
+  "description":  "Boilerplate for a kata in php with symfony console",
+  "license": "MIT",
+  "type": "project",
+  "authors": [
+    {
+      "name": "Aarón Bernabeu Rodríguez",
+      "email": "aaronidasbr@gmail.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "App\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "App\\Tests\\": "tests/"
+    }
+  },
+  "require": {
+    "php": ">=7.1",
+    "symfony/console": "^4.2",
+    "symfony/dependency-injection": "^4.2",
+    "symfony/yaml": "^4.2",
+    "symfony/config": "^4.2"
+  },
+  "require-dev": {
+    "symfony/var-dumper": "^4.2",
+    "phpunit/phpunit": "^8.0"
+  }
+}
